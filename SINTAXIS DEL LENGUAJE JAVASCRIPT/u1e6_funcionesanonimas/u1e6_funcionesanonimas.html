@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio6</title>
+</head>
+<body>
+    <script>
+    
+        let base = 5;
+        let altura = 3;
+        let lado1 = 3;
+        let lado2 = 4;
+        let lado3 = 5;
+        let radio = 4;
+
+        let areaTriangulo = function(base,altura) {
+            return (base*altura) / 2;
+        }
+
+        let perimetroEquilatero = function(lado1) {
+            return lado1*3;
+        }
+
+        let areaIsosceles = function(base,altura) {
+            return (base*altura)/2;
+        }
+
+        let perimetroIsosceles = function(lado1,lado2,base)  {
+            return base + lado1 + lado2;
+        }
+
+        let perimetroEscaleno = function(lado1,lado2,base) {
+            return base + lado1 + lado2;
+        }
+
+        function AreaCuadrado(lado1) {
+            return lado1 * lado1;
+        }
+
+        function PerimetroCuadrado(lado) {
+            return 4 * lado;
+        }
+
+        function AreaRectangulo(base, altura) {
+            return base * altura;
+        }
+
+        function PerimetroRectangulo(base, altura) {
+            return 2 * (base + altura);
+        }
+
+        document.write("Área del triángulo: "+areaTriangulo(base,altura)+"<br>");
+        document.write("Perímetro triángulo equilatero: "+perimetroEquilatero(lado1)+"<br>");
+        document.write("Área del triángulo isósceles: "+areaIsosceles(base,altura)+"<br>");
+        document.write("Área cuadrado: "+AreaCuadrado(lado1)+"<br>");
+
+        (function() {
+            let radio = 4;
+            let areaCirculo = Math.PI * radio * radio;
+            document.write("Área del círculo: " + areaCirculo.toFixed(2) + "<br>");
+        })();
+
+        (function() {
+            let radio = 4;
+            let longitudCircunferencia = 2 * Math.PI * radio;
+            document.write("Longitud de la circunferencia: " + longitudCircunferencia.toFixed(2) + "<br>");
+        })();
+
+
+
+    </script>
+
+    
+    
+</body>
+</html>

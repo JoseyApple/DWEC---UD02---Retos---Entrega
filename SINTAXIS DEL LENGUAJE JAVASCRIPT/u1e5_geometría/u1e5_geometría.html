@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio5</title>
+</head>
+<body>
+    <script src="u1e5_geometría.js"></script>
+    <script>
+        
+        let base = 5;
+        let altura = 3;
+        let lado1 = 3;
+        let lado2 = 4;
+        let lado3 = 5;
+        let ladoEquilatero = 4;
+        let ladoIsosceles = 5;
+        let radio = 4;
+
+        document.write("<h2>Resultados</h2>");
+        document.write("Área del triángulo: " + areaTriangulo(base, altura) + "<br>");
+        document.write("Perímetro del triángulo equilátero: " + perimetroEquilatero(ladoEquilatero) + "<br>");
+        document.write("Perímetro del triángulo isósceles: " + perimetroIsosceles(ladoIsosceles, base) + "<br>");
+        document.write("Perímetro del triángulo escaleno: " + perimetroEscaleno(lado1, lado2, lado3) + "<br>");
+        document.write("Área del cuadrado: " + areaCuadrado(ladoEquilatero) + "<br>");
+        document.write("Perímetro del cuadrado: " + perimetroCuadrado(ladoEquilatero) + "<br>");
+        document.write("Área del rectángulo: " + areaRectangulo(base, altura) + "<br>");
+        document.write("Perímetro del rectángulo: " + perimetroRectangulo(base, altura) + "<br>");
+        document.write("Área del círculo: " + areaCirculo(radio) + "<br>");
+        document.write("Longitud de la circunferencia: " + longitudCircunferencia(radio) + "<br>");
+    </script>
+
+        
+
+    
+    
+    
+</body>
+</html>

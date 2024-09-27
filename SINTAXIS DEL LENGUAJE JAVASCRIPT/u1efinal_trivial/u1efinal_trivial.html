@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EjercicioTrivial</title>
+</head>
+<body>
+    <script>
+        (function() { //He decidido hacer una función que se ejecute sola, esta es un menú Switch donde el usuario introduce valores enteros para navegar y contestar preguntas.
+
+            alert("¡Bienvenido al juego de preguntas!");
+            alert("Elige entre varias categorías; ¡Acierta 4 preguntas y ganas! Falla 3 y el juego termina.");
+            let contadorAciertos=0;
+            let contadorFallos=0;
+            let menu=true;
+
+
+            do {
+
+                let categoria = prompt("1) Deportes\n2) Biología\n3) Historia\n4) Geografía\n5) Ciencia\n6) Astronomía\n");
+                categoria = parseInt(categoria);
+                let respuesta="";
+
+                switch(categoria) {
+
+                    case 1:
+
+                    respuesta=prompt("Pregunta: ¿Cuál es la duración oficial de un partido de fútbol en tiempo reglamentario, sin contar el tiempo extra?"); //Cada vez que se acierte, sube un contador de aciertos que ya he inicializado arriba.
+                    respuesta=respuesta.toLowerCase();
+                    if (respuesta=="90 minutos" ||  respuesta=="90") {
+                        contadorAciertos++;
+                        alert("¡Correcto!");
+                        }
+                        else {
+                            contadorFallos++;
+                            alert("¡Incorrecto!"); //En caso contrario, hay otro contador de fallos.
+                            }
+                            break;
+                    
+                    case 2:
+
+                    respuesta=prompt("Pregunta: ¿Cómo se llama el proceso por el cual las plantas convierten la luz solar en energía química?");
+                    respuesta=respuesta.toLowerCase();
+                    if (respuesta=="Fotosíntesis" ||  respuesta=="fotosíntesis" ||  respuesta=="fotosintesis") {
+                        contadorAciertos++;
+                        alert("¡Correcto!");
+                        }
+                        else {
+                            contadorFallos++;
+                            alert("¡Incorrecto!");
+                            }
+                            break;
+
+                    case 3:
+
+                    respuesta=prompt("Pregunta: ¿En qué año tuvo lugar la Revolución Francesa?");
+                    if  (respuesta=="1789") {
+                        contadorAciertos++;
+                        alert("¡Correcto!");
+                        }
+                        else {
+                            contadorFallos++;
+                            alert("¡Incorrecto!");
+                            }
+                            break;
+                    
+                    case 4:
+
+                    respuesta=prompt("Pregunta: ¿Cuál es el río más largo de España?");
+                    respuesta=respuesta.toLowerCase();
+                    if (respuesta=="el ebro" || respuesta=="ebro"){
+                        contadorAciertos++;
+                        alert("¡Correcto!");
+                        }
+                        else {
+                            contadorFallos++;
+                            alert("¡Incorrecto!");
+                            }
+                            break;
+
+                    case 5:
+
+                    respuesta=prompt("¿Cuál es el elemento químico más abundante en la atmósfera terrestre?");
+                    respuesta=respuesta.toLowerCase();
+                    if (respuesta=="nitrógeno" || respuesta=="nitrogeno"){
+                        contadorAciertos++;
+                        alert("¡Correcto!");
+                        }
+                        else {
+                            contadorFallos++;
+                            alert("¡Incorrecto!");
+                            }
+                            break;
+
+                    case 6:
+                    
+                    respuesta=prompt("Pregunta: ¿Qué planeta del Sistema Solar tiene el día más largo en comparación con su órbita alrededor del sol?");
+                    respuesta=respuesta.toLowerCase();
+                    if (respuesta=="venus"){
+                        contadorAciertos++;
+                        alert("¡Correcto!");
+                        }
+                        else {
+                            contadorFallos++;
+                            alert("¡Incorrecto!");
+                            }
+                            break;
+                    
+                    default:
+                        alert("No existe esa opción");
+                        break;
+
+                    }
+
+                    if (contadorFallos==3){
+                alert("¡Lo siento, has fallado 3 veces y el juego ha terminado"); //Segun el ejercicio, si el contador de fallos llega a 3, o el de aciertos, a 4, el juego termina y indica el usuario si ha ganado o perdido.
+                menu=false;
+                } else if (contadorAciertos==4) {
+                    alert("¡Felicidades, has acertado 4 veces y has ganado!");
+                    menu=false;
+                    
+
+            }
+
+                    }while (menu);
+                }
+
+             
+        )();
+    </script>
+    
+</body>
+</html>

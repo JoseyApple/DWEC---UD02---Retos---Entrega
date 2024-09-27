@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGpteaoEntero</title>
+</head>
+<body>
+    <script>
+        
+        function mostrarHoras(){
+
+            let horaInicio = 8;
+            let horaFin = 20;
+
+            for (let hora = horaInicio; hora <= horaFin; hora++){
+                for (let minuto = 0; minuto < 60; minuto += 30){
+                    if(hora == horaFin && minuto > 30){
+                        break;
+                    }
+
+                    document.write(`${String(hora).padStart(2, '0')}:${String(minuto).padStart(2, '0')}<br>`); 
+                }
+            }
+        }
+
+        mostrarHoras();
+
+    </script>
+</body>
+</html>

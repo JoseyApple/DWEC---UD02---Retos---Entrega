@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Titulo</title>
+</head>
+
+<body>
+    <script>
+
+        let y=prompt('INTRODUZCA NÚMERO'); //Solicita al usuario un número. La variable se declara con let
+
+        y=parseInt(y); //A continuación, con parseInt, pasa el número introducido por el usuario a int
+
+        for (var x = 0; x <= 10; x++){ 
+
+            let r=y*x; //Uso let para declarar la variable correctamente.
+
+            document.write(y + ' x ' + x + ' = ' + r + '<br>'); //Escribe en la página web la tabla de multiplicar del número introducido
+                                                                    // por el usuario. El bucle va contando de 0 a 10. Para separar cada multiplicación, al final introduce un <br> que es
+                                                                        // un salto de página en HTML. 
+
+            }
+
+            </script>
+</body>
+
+</html>

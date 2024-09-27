@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio8</title>
+</head>
+<body>
+    <script>
+        alert("¡Voy a intentar adivinar el virus en que estás pensando!")
+        let  pregunta1 = prompt("¿Se puede borrar con antivirus? 1) Sí  2) No");
+
+        if (pregunta1==1){
+
+            let pregunta2 = prompt("¿Se multiplica?  1) Sí  2) No");
+
+
+            if (pregunta2==1){
+
+                alert("¡El virus es un gusano!");
+
+            } else {
+
+                alert("¡El virus es un troyano!");
+            }
+
+        } else if(pregunta1==2) {
+
+            let pregunta2 = prompt("Se soluciona con actualizar el sistema?   1) Sí  2) No");
+
+            if  (pregunta2==1) {
+
+                let pregunta3 =  prompt("¿Puede ser un error en el sistema?  1) Sí  2) No");
+
+                if (pregunta3==1) {
+
+                    alert("¡Es un bug!")
+                    
+                } else {
+                    
+                    alert("¡Es un exploit!");
+                }
+            } else {
+
+                alert("¡Es spam!")
+            }
+
+
+        }  else {
+
+            alert("Opción equivocada.")
+        }
+
+
+    </script>
+    
+</body>
+</html>

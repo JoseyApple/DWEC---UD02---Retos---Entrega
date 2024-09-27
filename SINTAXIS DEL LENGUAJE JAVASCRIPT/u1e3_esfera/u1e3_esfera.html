@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+
+<body>
+    <script>
+        alert('Vamos a calcular el volumen de una esfera.')
+        let y = prompt('Introduce el radio de la esfera.');
+        alert('Has introducido: ' + y);
+        alert('En primer lugar, elevamos el radio al cubo.');
+        y = parseFloat(y); //Pasamos a float el valor introducido por el usuario.
+        let radioAlCubo = Math.pow(y, 3); //Math.pow sirve para conventir valores al cuadrado.
+        alert(y + ' al cubo es: ' + radioAlCubo);
+        alert('A continuación, multiplicamos el resultado por π');
+        let resul1 = radioAlCubo * Math.PI; //Math.PI llama al valor de PI para la operación matemática.
+        alert('El resultado de la operación es: ' + resul1.toFixed(2) + ' Finalmente, multiplicamos por 4/3') //He usado toFixed para cortar los decimales de la operación.
+        let resul2 = resul1 * (4 / 3)
+        alert('El resultado es: ' + resul2.toFixed(2) + ' unidades cúbicas.') //He usado toFixed de nuevo ya que no modifica el valor, solo cambia el formato, por lo tanto, repito su uso.
+    </script>
+</body>
+
+</html>
